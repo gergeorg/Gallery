@@ -1,4 +1,4 @@
-# View gallery app
+# Gallery app
 
 [Gallery app](https://gergeorg.github.io/Gallery/ "View app")
 
@@ -15,10 +15,10 @@
 - Работа с [Unsplash API](https://unsplash.com/developers "Unsplash API"), с помощью fetch
 - Авторизация oAuth с использованием JWT-токена
 - Подгрузка данных с прокруткой страницы (IntersectionObserver)
+- Использована библиотека [Masonry](https://masonry.desandro.com/ "Masonry") для разметки сетки
 
 
-## Used libs
-[Masonry](https://masonry.desandro.com/ "Masonry")
+
 
 
 
