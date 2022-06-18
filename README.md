@@ -1,5 +1,10 @@
 # Gallery
 
+#View app
+[Gallery app](https://gergeorg.github.io/Gallery/ "View app")
+
+
+
 
 ## Technology used
 
