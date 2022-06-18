@@ -1,10 +1,13 @@
 import { createCardPhoto } from './createCardPhoto.js';
-import { creteElem } from './creteElem.js';
+import { createElem } from './createElem.js';
+import { scrollLoad } from './scrollLoad.js';
 
 export const renderGallery = (wrapper, photos) => {
-	const gallery = creteElem('ul', {
+	const gallery = createElem('ul', {
 		className: 'grid'
 	})
+
+	const endElem = createElem('div')
 
 	wrapper.append(gallery)
 
@@ -21,5 +24,7 @@ export const renderGallery = (wrapper, photos) => {
 		.then(cards => {
 			gallery.append(...cards)
 			grid.appended( cards )
+			wrapper.append(endElem)
+			scrollLoad(gallery, grid, endElem)
 		})
 }
