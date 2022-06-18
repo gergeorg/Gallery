@@ -1,6 +1,17 @@
 import { creteElem } from './creteElem.js'
 
-export const createCardPhoto = (data) => {
+const loadImg = (url, description) => {
+	return new Promise((resolve, reject) => {
+		const img = new Image()
+		img.src = url
+		img.width = 200
+		img.alt = description
+		img.addEventListener('load', () => resolve(img))
+		img.addEventListener('error', (err) => reject(new Error(err)))
+	})
+}
+
+export const createCardPhoto = async (data) => {
 	const card = creteElem('li', {
 		className: 'card',
 	})
@@ -12,10 +23,7 @@ export const createCardPhoto = (data) => {
 	})
 
 
-	const photo = new Image()
-	photo.src = data.urls.small
-	photo.width = '200'
-	photo.alt = data.alt_description
+	const photo = await loadImg(data.urls.small, data.alt_description)
 
 	const author = creteElem('a', {
 		className: 'card__author',
