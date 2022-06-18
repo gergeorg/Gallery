@@ -1,6 +1,4 @@
-# Gallery
-
-#View app
+#View gallery app
 [Gallery app](https://gergeorg.github.io/Gallery/ "View app")
 
 
