@@ -12,10 +12,13 @@
 ![JS](https://img.shields.io/badge/JS-JavaScript-blue?style=for-the-badge&logo=js&logoColor=white)
 
 
+— Работа с [Unsplash API](https://unsplash.com/developers "Unsplash API"), с помощью fetch
+— Авторизация oAuth с использованием JWT-токена
+— Подгрузка данных с прокруткой страницы (IntersectionObserver)
+
+
 ## Used libs
 [Masonry](https://masonry.desandro.com/ "Masonry")
 
 
-## Used API
-[Unsplash](https://unsplash.com/developers "Unsplash")
 
