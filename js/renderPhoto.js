@@ -32,6 +32,7 @@ export const renderPhoto = (photoWrapper, photo) => {
 		id: photo.id,
 		className: 'photo__like',
 		textContent: photo.likes,
+		likedByUser: photo.liked_by_user,
 	})
 
 	if (!likeBtn.likedByUser) {
@@ -46,6 +47,7 @@ export const renderPhoto = (photoWrapper, photo) => {
 	})
 
 	photoControl.append(likeBtn, linkDownload)
-
 	photoWrapper.append(img, authorLink, photoControl)
+
+	return likeBtn
 }

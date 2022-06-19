@@ -14,8 +14,15 @@ export const getData = ({ page = 1, count, idPhoto}) => {
 		url.pathname += `/${idPhoto}`
 	}
 
+	const headers = {}
 
-  return fetch(url)
+	if (localStorage.getItem('Bearer')) {
+		headers.Authorization = `Bearer ${localStorage.getItem('Bearer')}`
+	}
+
+  return fetch(url, {
+		headers
+	})
 		.then((data) => {
 			return data.json()
 		})
