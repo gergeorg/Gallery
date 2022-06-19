@@ -1,6 +1,8 @@
 # Gallery app
 
-[Gallery app](https://gergeorg.github.io/Gallery/ "View app")
+[Gallery app in GitHab Pages](https://gergeorg.github.io/Gallery/ "View app")
+[Gallery app in Vercel](https://gallery-nine-indol.vercel.app/ "View app")
+
 
 
 
